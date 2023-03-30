@@ -17,8 +17,8 @@ class TwoSum {
 public:
     vector<int> getSumIndices(vector<int>& numbers, int target) 
     {
-        uint8_t ptr1 = 0;
-        uint8_t ptr2 = numbers.size()-1;
+        int ptr1 = 0;
+        int ptr2 = numbers.size()-1;
         while (ptr1<ptr2 && numbers[ptr1]+numbers[ptr2]!=target)
         { 
             if (numbers[ptr1]+numbers[ptr2]>target)
